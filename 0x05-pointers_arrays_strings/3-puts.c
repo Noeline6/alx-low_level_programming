@@ -1,18 +1,21 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * _strlen - function that returns the length of a string.
- * @s : s is a character
- * Return: value is i
+ * _puts - Func body
+ * Description: Prints out a string to stdout
+ * @str: String to print to stdout
+ * Return: void
  */
 
-int _strlen(char *s)
+void _puts(char *str)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (str[i] != '\0')
 	{
-
+		_putchar(str[i]);
+		i++;
 	}
-	return (i);
+	_putchar('\n');
 }
