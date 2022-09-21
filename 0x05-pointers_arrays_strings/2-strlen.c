@@ -1,18 +1,22 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * _puts - check the code.
- * @str: validate the character
- * Return: Always 0.
+ * _strlen - Func body
+ * Description: Return the length of a string without using strlen func
+ * @s: String to return length
+ * Return: length of string
  */
 
-void _puts(char *str)
+int _strlen(char *s)
 {
-	int i;
+	int len = 0;
 
-	for (i = 0; str[i] != '\0' ; i++)
+	while (*s != '\0')
 	{
-		_putchar(str[i]);
+		s++;
+		len++;
 	}
-	_putchar('\n');
+
+	return (len);
 }
